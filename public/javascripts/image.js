@@ -45,7 +45,7 @@ function convertToArabic(englishWord){
 
 function insertWord(word) {
     $.ajax({
-        url: "https://abber-byadek.herokuapp.com/createWord",
+        url: "https://arabic-sign-language-translate.herokuapp.com/createWord",
         method: "POST",
         data: {
             word: word
@@ -62,7 +62,7 @@ function insertWord(word) {
  }
 
 function sendRequest(base64) {
-    var url = "https://detect.roboflow.com/sign-language-project/4?api_key=PKTwmB23GA4ltL69QaSS";
+    var url = "https://detect.roboflow.com/saudi-sign-language/1?api_key=KG7qCG83imlTN93yMf8s";
     var xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
     xhr.open("POST", url);

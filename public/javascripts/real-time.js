@@ -21,7 +21,7 @@ function convertToArabic(englishWord){
 
 function insertWord(word) {
     $.ajax({
-        url: "https://abber-byadek.herokuapp.com/createWord",
+        url:"https://arabic-sign-language-translate.herokuapp.com/createWord",
         method: "POST",
         data: {
             word: word
@@ -59,10 +59,10 @@ $(function() {
         });
     });
 
-    var publishable_key = "rf_P5W8AVqS1I2jZW1JNU1v";
+    var publishable_key = "rf_LDI9BiPt0QtkFfIU7ru9";
     var toLoad = {
-        model: "sign-language-webapp",
-        version: 2 // <<<--- YOUR VERSION THERE
+        model: "saudi-sign-language",
+        version: 1 // <<<--- YOUR VERSION THERE
     };
 
     const loadModelPromise = new Promise(function(resolve, reject) {
